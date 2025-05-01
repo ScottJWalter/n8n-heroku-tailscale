@@ -6,11 +6,10 @@
   --outbound-http-proxy-listen=localhost:1055 \
   &
 
-/tailscale/tailscale \
+/tailscale/tailscale up
   --auth-key=${TAILSCALE_AUTHKEY} \
   --hostname=${TAILSCALE_NODE_NAME} \ 
-  --accept-routes \
-  up 
+  --accept-routes 
 
 echo Tailscale started
 
