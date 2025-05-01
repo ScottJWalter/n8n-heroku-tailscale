@@ -1,4 +1,4 @@
-# n8n-heroku
+# n8n-heroku-tailscale
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/scottjwalter/n8n-heroku-tailscale/tree/main)
 
