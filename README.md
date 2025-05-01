@@ -1,6 +1,10 @@
 # n8n-heroku-tailscale
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/scottjwalter/n8n-heroku-tailscale/tree/main)
+<a href="https://dashboard.heroku.com/new?template=https://github.com/scottjwalter/n8n-heroku-tailscale/tree/main"
+    target="_blank"
+    ><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"
+    ></a
+>
 
 ## n8n - Free and open fair-code licensed node based Workflow Automation Tool.
 
