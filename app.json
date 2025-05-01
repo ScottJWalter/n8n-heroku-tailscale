@@ -31,11 +31,11 @@
       },
       "TAILSCALE_NODE_NAME": {
         "description": "Name of your app's tailscale (direct) node.",
-        "value": "ts-node-name"
+        "value": "n8n"
       },
       "TAILSCALE_AUTHKEY": {
         "description": "Tailscale tailnet authentication key.  You can create your key here:  https://login.tailscale.com/admin/settings/keys.",
-        "value": "tk-auth-key-..........."
+        "value": "tskey-auth-..........."
       }
     },
     "addons": [
