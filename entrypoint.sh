@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/tailscale/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
+/tailscale/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 --outbound-http-proxy-listen=localhost:1055 &
 /tailscale/tailscale up --auth-key=${TAILSCALE_AUTHKEY} --hostname=${TAILSCALE_NODE_NAME}
 echo Tailscale started
 
@@ -27,4 +27,7 @@ export DB_POSTGRESDB_USER=$N8N_DB_USER
 export DB_POSTGRESDB_PASSWORD=$N8N_DB_PASSWORD
 
 # kickstart nodemation
-ALL_PROXY=socks5://localhost:1055/ n8n
+ALL_PROXY=socks5://localhost:1055/ \
+  HTTP_PROXY=http://localhost:1055/ \
+  http_proxy=http://localhost:1055/ \
+  n8n
