@@ -1,7 +1,7 @@
 #!/bin/sh
 
-/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
-/tailscale up --auth-key=${TAILSCALE_AUTHKEY} --hostname=${TAILSCALE_NODE_NAME}
+/tailscale/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
+/tailscale/tailscale up --auth-key=${TAILSCALE_AUTHKEY} --hostname=${TAILSCALE_NODE_NAME}
 echo Tailscale started
 
 # check if port variable is set or go with default
