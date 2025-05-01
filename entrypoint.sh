@@ -8,8 +8,8 @@
 
 /tailscale/tailscale \
   --auth-key=${TAILSCALE_AUTHKEY} \
-  --hostname=${TAILSCALE_NODE_NAME} \
-  --accept-routes=true \
+  --hostname=${TAILSCALE_NODE_NAME} \ 
+  --accept-routes \
   up 
 
 echo Tailscale started
