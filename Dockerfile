@@ -5,6 +5,8 @@ USER root
 WORKDIR /home/node/packages/cli
 ENTRYPOINT []
 
+RUN apk update && apk add ca-certificates  & rm -rf /var/cache/apk/*
+
 # Copy Tailscale binaries from the tailscale image on Docker Hub.
 COPY --from=docker.io/tailscale/tailscale:stable /usr/local/bin/tailscaled /tailscale/tailscaled
 COPY --from=docker.io/tailscale/tailscale:stable /usr/local/bin/tailscale /tailscale/tailscale
